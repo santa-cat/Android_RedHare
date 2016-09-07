@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_small"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:id="@+id/sc_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sc_search"
+            android:padding="7dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/search_def"/>
+            <TextView
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/textsize_small"
+                android:textColor="@color/colorTextLightGray"
+                android:text="搜索"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.santa.redhare.searchfragment.AutoCycleView
+                android:id="@+id/sc_cycleview"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@android:color/white"
+                android:paddingTop="@dimen/margin_small"
+                android:paddingBottom="@dimen/margin_small"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <com.example.santa.redhare.utils.ImageText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:it_text="活动"
+                    app:it_srcDef="@mipmap/daily_me"
+                    app:it_textColorDef="@android:color/black"
+                    app:it_textColorChecked="@color/colorPrimary"/>
+
+                <com.example.santa.redhare.utils.ImageText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:it_text="小组"
+                    app:it_srcDef="@mipmap/group_green"
+                    app:it_textColorDef="@android:color/black"
+                    app:it_textColorChecked="@color/colorPrimary"/>
+                <com.example.santa.redhare.utils.ImageText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:it_text="职位"
+                    app:it_srcDef="@mipmap/bag_green"
+                    app:it_textColorDef="@android:color/black"
+                    app:it_textColorChecked="@color/colorPrimary"/>
+                <com.example.santa.redhare.utils.ImageText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:it_text="附近"
+                    app:it_srcDef="@mipmap/near_green"
+                    app:it_textColorDef="@android:color/black"
+                    app:it_textColorChecked="@color/colorPrimary"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="@dimen/margin_small"
+                android:background="@android:color/white"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"/>
+                <TextView
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_big"
+                    android:text="热门活动"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/sc_activity"
+                android:layout_marginTop="1dp"
+                android:padding="@dimen/margin_small"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/sc_search"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/sc_activitybig"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/activity1"/>
+                <RelativeLayout
+                    android:layout_alignBottom="@+id/sc_activitybig"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.5"
+                    android:background="@color/colorTextMidGray">
+                    <TextView
+                        android:padding="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:text="线上活动 ｜ 953人已报名"/>
+                    <TextView
+                        android:padding="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@android:color/white"
+                        android:text="08月25日 20:00"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="@dimen/margin_small"
+                android:background="@android:color/white"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textsize_big"
+                android:text="从0-1，教你成为职场精英"
+                android:layout_weight="1" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/margin_small"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <com.example.santa.redhare.connfragment.CircleImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/mine_checked"/>
+                <TextView
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="于际敬"/>
+                <TextView
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTextLightGray"
+                    android:text="剑桥大学 培训讲师"/>
+            </LinearLayout>
+
+
+            <!--TODO：修改为listview-->
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <LinearLayout
+                android:id="@+id/sc_activitys"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/item_activity"/>
+                <include layout="@layout/item_activity"/>
+                <include layout="@layout/item_activity"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:padding="@dimen/margin_small"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:background="@android:color/white"
+                android:textSize="@dimen/textsize_big"
+                android:textColor="@color/colorPrimary"
+                android:text="更多精彩活动"
+                android:layout_weight="1" />
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="@dimen/margin_small"
+                android:background="@android:color/white"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"/>
+                <TextView
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_big"
+                    android:text="热门话题"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="@dimen/margin_small"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:layout_weight="1">
+                <com.example.santa.redhare.redharefragment.SquareImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/op1"
+                    android:background="@drawable/sc_search"/>
+                <LinearLayout
+                    android:id="@+id/sc_topicMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_small"
+                    android:layout_gravity="center">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorTextLightGray"
+                            android:textSize="@dimen/textsize_big"
+                            android:text="#"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/textsize_big"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:text="又到了奥运年，你有什么关于奥运会的美好记忆"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTextLightGray"
+                        android:textSize="@dimen/textsize_small"
+                        android:text="奥运记忆"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_small"
+                    android:background="@drawable/sc_topic"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTextLightGray"
+                        android:textSize="@dimen/textsize_big"
+                        android:text="#"/>
+                    <TextView
+                        android:id="@+id/topic_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textsize_big"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text="如何看待滴滴收购优步"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_small"
+                    android:background="@drawable/sc_topic"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTextLightGray"
+                        android:textSize="@dimen/textsize_big"
+                        android:text="#"/>
+                    <TextView
+                        android:id="@+id/topic_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textsize_big"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text="望月车获得合法地位"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_small"
+                    android:background="@drawable/sc_topic"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTextLightGray"
+                        android:textSize="@dimen/textsize_big"
+                        android:text="#"/>
+                    <TextView
+                        android:id="@+id/topic_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textsize_big"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text="你如何看待“秀加班”"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_small"
+                    android:background="@drawable/sc_topic"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTextLightGray"
+                        android:textSize="@dimen/textsize_big"
+                        android:text="#"/>
+                    <TextView
+                        android:id="@+id/topic_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textsize_big"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text="赤兔你萌说"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:padding="@dimen/margin_small"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:background="@android:color/white"
+                android:textSize="@dimen/textsize_big"
+                android:textColor="@color/colorPrimary"
+                android:text="更多热门话题"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="@dimen/margin_small"
+                android:background="@android:color/white"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"/>
+                <TextView
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_big"
+                    android:text="热招职位"/>
+            </LinearLayout>
+
+            <include layout="@layout/item_station"/>
+            <include layout="@layout/item_station"/>
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:padding="@dimen/margin_small"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:background="@android:color/white"
+                android:textSize="@dimen/textsize_big"
+                android:textColor="@color/colorPrimary"
+                android:text="更多热招职位"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="@dimen/margin_small"
+                android:background="@android:color/white"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"/>
+                <TextView
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_big"
+                    android:text="推荐小组"/>
+            </LinearLayout>
+
+
+            <include layout="@layout/item_group"/>
+
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:padding="@dimen/margin_small"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:background="@android:color/white"
+                android:textSize="@dimen/textsize_big"
+                android:textColor="@color/colorPrimary"
+                android:text="查看更多"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="@dimen/margin_small"
+                android:background="@android:color/white"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"/>
+                <TextView
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_big"
+                    android:text="附近的人"/>
+            </LinearLayout>
+
+            <include layout="@layout/item_person"/>
+
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:padding="@dimen/margin_small"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:background="@android:color/white"
+                android:textSize="@dimen/textsize_big"
+                android:textColor="@color/colorPrimary"
+                android:text="查看更多"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:background="@color/colorBg"/>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

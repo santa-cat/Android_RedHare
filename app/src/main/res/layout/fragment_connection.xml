@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_small"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:id="@+id/conn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/search_white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人脉"
+            android:textSize="22sp"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/plus_white"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/conn_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="0dp"
+        android:divider="@android:color/white"/>
+</LinearLayout>

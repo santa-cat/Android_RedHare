@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:padding="@dimen/margin_small">
+
+
+    <com.example.santa.redhare.connfragment.CircleImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/sc_person"/>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/commi_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBkDu"
+                android:textSize="@dimen/textsize_big"
+                android:text="叶英"/>
+
+            <TextView
+                android:id="@+id/commi_time"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextLightGray"
+                android:textSize="@dimen/textsize_normal"
+                android:text="16-8-9"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/commi_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextLightGray"
+            android:textSize="@dimen/textsize_normal"
+            android:text="根本原因在于人"/>
+
+    </LinearLayout>
+
+</LinearLayout>

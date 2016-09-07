@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_small"
+        android:background="@color/colorBg">
+
+        <TextView
+            android:id="@+id/add_cancel"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_big"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:text="取消"/>
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize_title"
+            android:text="发动态"/>
+
+        <TextView
+            android:id="@+id/add_send"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextLightGray"
+            android:textSize="@dimen/textsize_big"
+            android:background="@drawable/red_add"
+            android:text="发布"/>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/add_edit"
+                android:padding="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorTextLightGray"
+                android:textSize="@dimen/textsize_big"
+                android:textCursorDrawable="@drawable/cursor"
+                android:hint="即使又是忙碌的一天，也定有醍醐灌顶的瞬间"
+                android:minLines="2"
+                android:gravity="top"
+                android:background="@android:color/white"/>
+            <com.example.santa.redhare.redharefragment.AllGridView
+                android:id="@+id/add_gridview"
+                android:padding="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBg"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/add_picture"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="24dp"
+                android:src="@mipmap/picture"/>
+            <ImageView
+                android:id="@+id/add_emoji"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="24dp"
+                android:src="@drawable/e1f600"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="24dp"
+                android:src="@drawable/e1f600"/>
+            <ImageView
+                android:id="@+id/add_topic"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:src="@mipmap/edit_me"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_emojilayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/add_viewpager"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_height="210dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

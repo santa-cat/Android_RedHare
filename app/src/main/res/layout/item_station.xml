@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:layout_marginTop="1dp"
+    android:padding="@dimen/margin_small">
+
+    <com.example.santa.redhare.redharefragment.SquareImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/sc_topic"
+        android:src="@mipmap/op2"/>
+    <LinearLayout
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="软件研发工程师"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_small"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorPay"
+                android:text="10K-20K"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_small"
+            android:textColor="@color/colorTextLightGray"
+            android:text="上海 3-5年 上海魏宏电子科技股份有限公司" />
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_small"
+            android:textColor="@color/colorTextLightGray"
+            android:text="发布者：薛爱军 HR助理" />
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_small"
+            android:textColor="@color/colorTextLightGray"
+            android:text="上市企业 股权激励" />
+    </LinearLayout>
+
+</LinearLayout>

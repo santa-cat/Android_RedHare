@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="@dimen/margin_small">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextLightGray"
+            android:textSize="@dimen/textsize_normal"
+            android:text="0个问题"/>
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:padding="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:background="@drawable/bg_activityleft"
+                android:textSize="@dimen/textsize_normal"
+                android:text="最新"/>
+            <TextView
+                android:padding="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextLightGray"
+                android:background="@drawable/bg_activityright"
+                android:textSize="@dimen/textsize_normal"
+                android:text="最热"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBg">
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/redhare"/>
+
+            <TextView
+                android:background="@color/colorBg"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/colorTextLightGray"
+                android:textSize="@dimen/textsize_normal"
+                android:text="还没有内容，我来发一条"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

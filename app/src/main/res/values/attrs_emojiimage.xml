@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EmojiImageView">
+        <attr name="eiv_srcDef" format="reference"/>
+        <attr name="eiv_srcChecked" format="reference"/>
+    </declare-styleable>
+</resources>

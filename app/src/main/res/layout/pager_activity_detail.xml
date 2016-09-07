@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingLeft="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/margin_small"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/daily_gray"/>
+
+        <TextView
+            android:id="@+id/activity_time"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorTextLightGray"
+            android:textSize="@dimen/textsize_big"
+            android:text="09月03日 20:00-21:30"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textsize_big"
+            android:text="报名中"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingRight="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/mine_def"/>
+
+        <TextView
+            android:id="@+id/activity_numOfPeople"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorTextLightGray"
+            android:textSize="@dimen/textsize_big"
+            android:text="103人已报名"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/arrows"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/margin_small"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/near_gray"/>
+
+        <TextView
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorTextLightGray"
+            android:textSize="@dimen/textsize_big"
+            android:text="线上活动"/>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBg"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.example.santa.redhare.connfragment.CircleImageView
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/sc_person"/>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/activity_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_big"
+                android:textColor="@android:color/black"
+                android:text="叶未萌"/>
+            <TextView
+                android:id="@+id/activity_station"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_normal"
+                android:textColor="@color/colorTextLightGray"
+                android:text="第一职业网 资深职业发展咨询师"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize_big"
+        android:textColor="@android:color/black"
+        android:text="正文" />
+
+</LinearLayout>

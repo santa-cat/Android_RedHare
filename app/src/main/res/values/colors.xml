@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1DBE8F</color>
+    <color name="colorPrimaryDark">#1DBE8F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTextDefMenu">#868e98</color>
+    <color name="colorTextLightGray">#aaaaaa</color>
+    <color name="colorTextMidGray">#868e98</color>
+    <color name="colorBg">#f9f9f9</color>
+    <color name="colorMoreDetail">#405788</color>
+    <color name="colorBkDu">#497eb0</color>
+    <color name="colorLightBlue">#71aaf9</color>
+    <color name="colorPay">#f68665</color>
+    <color name="colorGreenDark">#39a589</color>
+</resources>

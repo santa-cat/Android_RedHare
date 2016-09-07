@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/activity_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/op2"/>
+
+
+        <ImageView
+            android:id="@+id/activity_reback"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_alignParentLeft="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerInside"
+            android:padding="@dimen/margin_small"
+            android:alpha="0.4"
+            android:background="@drawable/bg_circle"
+            android:src="@mipmap/reback_white"/>
+
+        <ImageView
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginRight="@dimen/margin_small"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerInside"
+            android:padding="@dimen/margin_small"
+            android:alpha="0.4"
+            android:background="@drawable/bg_circle"
+            android:src="@mipmap/share_white"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_green"
+        android:layout_margin="@dimen/margin_small"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_big"
+                android:textColor="@android:color/white"
+                android:text="立即报名"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBg"/>
+
+    <com.example.santa.redhare.utils.PagerTag
+        android:id="@+id/activity_pagertag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ptTextColor="@color/colorTextLightGray"
+        app:ptTextSize="@dimen/textsize_big"
+        app:ptTagCurColor="@color/colorPrimary"
+        app:ptTagBackColor="@android:color/white"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBg"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

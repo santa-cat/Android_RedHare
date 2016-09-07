@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBg"
+    tools:context=".topicactivity.TopicActivity">
+
+
+
+    <ListView
+        android:id="@+id/topic_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/colorBg"
+        android:dividerHeight="@dimen/margin_small"/>
+
+    <RelativeLayout
+        android:id="@+id/topic_topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_small"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/topic_rbIcon"
+            android:padding="4dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/reback_white"
+            android:background="@drawable/bg_circle"/>
+        <TextView
+            android:id="@+id/topic_rbText"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize_big"
+            android:visibility="gone"
+            android:text="返回"/>
+
+        <TextView
+            android:id="@+id/topic_titleTop"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize_big"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:text="话题"/>
+
+        <ImageView
+            android:id="@+id/topic_moreIcon"
+            android:padding="4dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/plus_white"
+            android:background="@drawable/bg_circle"/>
+        <TextView
+            android:id="@+id/topic_moreText"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize_big"
+            android:visibility="gone"
+            android:text="更多"/>
+    </RelativeLayout>
+
+</RelativeLayout>

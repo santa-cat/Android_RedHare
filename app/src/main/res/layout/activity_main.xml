@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBg"
+    tools:context=".mainactivity.MainActivity">
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#aaaaaa"/>
+    <com.example.santa.redhare.utils.MenuLayout
+        android:id="@+id/main_menulayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorBg"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small">
+        <com.example.santa.redhare.utils.ImageText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:it_text="赤兔"
+            app:it_srcDef="@mipmap/red_def"
+            app:it_srcChecked="@mipmap/red_checked"
+            app:it_textColorDef="@color/colorTextDefMenu"
+            app:it_textColorChecked="@color/colorPrimary"/>
+
+        <com.example.santa.redhare.utils.ImageText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:it_text="人脉"
+            app:it_srcDef="@mipmap/conn_def"
+            app:it_srcChecked="@mipmap/conn_checked"
+            app:it_textColorDef="@color/colorTextDefMenu"
+            app:it_textColorChecked="@color/colorPrimary"/>
+        <com.example.santa.redhare.utils.ImageText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:it_text="消息"
+            app:it_srcDef="@mipmap/message_def"
+            app:it_srcChecked="@mipmap/message_checked"
+            app:it_textColorDef="@color/colorTextDefMenu"
+            app:it_textColorChecked="@color/colorPrimary"/>
+        <com.example.santa.redhare.utils.ImageText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:it_text="发现"
+            app:it_srcDef="@mipmap/search_def"
+            app:it_srcChecked="@mipmap/search_checked"
+            app:it_textColorDef="@color/colorTextDefMenu"
+            app:it_textColorChecked="@color/colorPrimary"/>
+        <com.example.santa.redhare.utils.ImageText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:it_text="我"
+            app:it_srcDef="@mipmap/mine_def"
+            app:it_srcChecked="@mipmap/mine_checked"
+            app:it_textColorDef="@color/colorTextDefMenu"
+            app:it_textColorChecked="@color/colorPrimary"/>
+    </com.example.santa.redhare.utils.MenuLayout>
+
+</LinearLayout>

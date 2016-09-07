@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/tp_headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/op1"/>
+
+        <TextView
+            android:id="@+id/topic_title"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/margin_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_title"
+            android:gravity="center"
+            android:text="#又到了奥运年，你有什么关于奥运会的美好记忆#"/>
+        <TextView
+            android:layout_below="@id/topic_title"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_normal"
+            android:text="参与数 334"/>
+    </RelativeLayout>
+    <com.example.santa.redhare.redharefragment.ShrinkText
+        android:id="@+id/main_connent"
+        android:padding="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:st_textColor="@android:color/black"
+        app:st_textColorDetail="@color/colorMoreDetail"
+        app:st_maxLines="4"
+        app:st_text="又是一届奥运会开幕，这场盛事和我们一起从校园到职场，每四年都如约而至。#又到了奥运年，你有什么关于奥运会的美好记忆#，2008年北京申奥成功的欢呼？与基友一同熬夜的激情？还是和当年的他（她）一起度过的时光？"/>
+
+    <LinearLayout
+        android:id="@+id/topic_join"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_green"
+        android:layout_margin="@dimen/margin_small"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/edit_white"/>
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_big"
+                android:textColor="@android:color/white"
+                android:text="参与话题"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

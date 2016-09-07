@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ChatStroke">
+        <attr name="cs_colorBackground" format="color"/>
+        <attr name="cs_direction" format="integer"/>
+    </declare-styleable>
+</resources>

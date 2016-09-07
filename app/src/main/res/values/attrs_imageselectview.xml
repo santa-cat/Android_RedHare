@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageSelectView">
+        <attr name="isv_selectradius" format="dimension"/>
+        <attr name="isv_selectmargin" format="dimension"/>
+        <attr name="isv_selectdef" format="reference"/>
+        <attr name="isv_selectchecked" format="reference"/>
+        <attr name="isv_imagesrc" format="reference"/>
+    </declare-styleable>
+
+</resources>

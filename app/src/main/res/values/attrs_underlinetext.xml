@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="UnderlineText">
+        <attr name="ut_underlineHeight" format="dimension"/>
+        <attr name="ut_underlineColor" format="color"/>
+    </declare-styleable>
+</resources>

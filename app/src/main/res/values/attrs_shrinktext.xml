@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ShrinkText">
+        <attr name="st_textColor" format="color"/>
+        <attr name="st_textColorDetail" format="color"/>
+        <attr name="st_text" format="string"/>
+        <attr name="st_textDetail" format="string"/>
+        <attr name="st_textSize" format="integer"/>
+        <attr name="st_maxLines" format="integer"/>
+    </declare-styleable>
+</resources>

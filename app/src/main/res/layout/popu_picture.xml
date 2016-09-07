@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBg">
+
+
+    <TextView
+        android:id="@+id/popu_takephoto"
+        android:padding="@dimen/margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize_title"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:text="拍照" />
+    <TextView
+        android:layout_marginTop="1dp"
+        android:id="@+id/popu_pickphoto"
+        android:padding="@dimen/margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize_title"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:text="从相册选择" />
+    <TextView
+        android:id="@+id/popu_cancle"
+        android:layout_marginTop="3dp"
+        android:padding="@dimen/margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize_title"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:text="取消" />
+
+
+
+</LinearLayout>

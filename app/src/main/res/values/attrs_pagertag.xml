@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PagerTag">
+        <attr name="ptTextSize" format="dimension" />
+        <attr name="ptTextColor" format="color" />
+        <attr name="ptDividerColor" format="color" />
+        <attr name="ptExpandHeight" format="dimension" />
+        <attr name="ptDividerPadding" format="dimension" />
+        <attr name="ptTagPaddingLeftRight" format="dimension" />
+        <attr name="ptTagBackColor" format="color" />
+        <attr name="ptTagCurColor" format="color" />
+    </declare-styleable>
+</resources>

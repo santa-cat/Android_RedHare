@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_marginTop="1dp"
+    android:padding="@dimen/margin_small">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/sc_card">
+
+        <ImageView
+            android:id="@+id/sc_atyimage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/op2"/>
+        <TextView
+            android:id="@+id/sc_atynum"
+            android:padding="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextLightGray"
+            android:textSize="@dimen/textsize_small"
+            android:text="315人已报名"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/sc_atytitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="7秒内吸引HR注意，如何制作一份金牌简历？"/>
+        <TextView
+            android:id="@+id/sc_atyname"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextLightGray"
+            android:textSize="@dimen/textsize_small"
+            android:text="叶未萌 | 资深职业发展咨询师"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextLightGray"
+                android:textSize="@dimen/textsize_small"
+                android:layout_alignParentLeft="true"
+                android:text="线上活动"/>
+            <TextView
+                android:id="@+id/sc_atytime"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextLightGray"
+                android:textSize="@dimen/textsize_small"
+                android:layout_alignParentRight="true"
+                android:text="08月09日 20:00"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

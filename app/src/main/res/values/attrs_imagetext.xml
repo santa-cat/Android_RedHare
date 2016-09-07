@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageText">
+        <attr name="it_textColorDef" format="color"/>
+        <attr name="it_textColorChecked" format="color"/>
+        <attr name="it_text" format="string"/>
+        <attr name="it_srcDef" format="reference"/>
+        <attr name="it_srcChecked" format="reference"/>
+        <attr name="it_margin" format="integer"/>
+    </declare-styleable>
+</resources>

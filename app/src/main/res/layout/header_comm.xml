@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:padding="@dimen/margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/mine_checked"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/comm_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:text="路人甲"/>
+                    <TextView
+                        android:id="@+id/comm_trade"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textsize_small"
+                        android:textColor="@color/colorTextLightGray"
+                        android:text="互联网／软件"/>
+                    <TextView
+                        android:id="@+id/comm_job"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textsize_small"
+                        android:textColor="@color/colorTextLightGray"
+                        android:text="开发"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/comm_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textsize_small"
+                        android:textColor="@color/colorTextLightGray"
+                        android:text="领英中国"/>
+                    <TextView
+                        android:id="@+id/comm_station"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textsize_small"
+                        android:textColor="@color/colorTextLightGray"
+                        android:text="工程经理"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/comm_src"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_small"
+                android:textColor="@color/colorTextLightGray"
+                android:text="同行业"/>
+        </LinearLayout>
+        <com.example.santa.redhare.redharefragment.ShrinkText
+            android:id="@+id/comm_connent"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:st_text="第一次抓中药，balabala\n\n\n\n\n\ntest"
+            app:st_textColor="@android:color/black"
+            app:st_textColorDetail="@color/colorMoreDetail"/>
+
+        <com.example.santa.redhare.redharefragment.AllGridView
+            android:id="@+id/comm_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+        <com.example.santa.redhare.utils.UnderlineText
+            android:id="@+id/comm_share"
+            android:padding="@dimen/margin_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextLightGray"
+            android:text="转发 10"
+            app:ut_underlineHeight="3dp"
+            app:ut_underlineColor ="@color/colorTextMidGray" />
+        <com.example.santa.redhare.utils.UnderlineText
+            android:id="@+id/comm_like"
+            android:padding="@dimen/margin_small"
+            android:layout_toRightOf="@id/comm_share"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextLightGray"
+            android:text="赞 24"
+            app:ut_underlineHeight="3dp"
+            app:ut_underlineColor ="@color/colorTextMidGray" />
+        <com.example.santa.redhare.utils.UnderlineText
+            android:id="@+id/comm_comm"
+            android:padding="@dimen/margin_small"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextLightGray"
+            android:text="评论 10"
+            app:ut_underlineHeight="3dp"
+            app:ut_underlineColor ="@color/colorTextMidGray" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBg"/>
+
+</LinearLayout>
