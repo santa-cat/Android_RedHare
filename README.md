@@ -17,8 +17,8 @@
 ＊支持照片拍摄；<br/>
 ＊支持插入话题；<br/>
 ![](https://github.com/xuzhitaosanta/Android_RedHare/blob/master/pic/dongtai1.gif)
-![](https://github.com/xuzhitaosanta/Android_RedHare/blob/master/pic/dongtai2.gif)<br/>
-![](https://github.com/xuzhitaosanta/Android_RedHare/blob/master/pic/dongtai3.gif)
+![](https://github.com/xuzhitaosanta/Android_RedHare/blob/master/pic/dongtai3.gif)<br/>
+![](https://github.com/xuzhitaosanta/Android_RedHare/blob/master/pic/dongtai2.gif)
 ![](https://github.com/xuzhitaosanta/Android_RedHare/blob/master/pic/dongtai4.gif)<br/><br/>
 
 ###发表评论
@@ -29,6 +29,7 @@
 ![](https://github.com/xuzhitaosanta/Android_RedHare/blob/master/pic/contacts.gif)<br/><br/>
 
 ###伸缩textView
+＊显示或隐藏较长文章<br/>
 ![](https://github.com/xuzhitaosanta/Android_RedHare/blob/master/pic/shrinkText.gif)<br/><br/>
 
 ###聊天
