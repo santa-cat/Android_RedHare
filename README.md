@@ -8,7 +8,7 @@
 ![](https://github.com/xuzhitaosanta/Android_RedHare/blob/master/pic/pullRefresh.gif)<br/><br/>
 
 ###照片预览功能
-*支持拉伸放大缩小，支持双击放大、支持滑动
+*支持拉伸放大缩小，支持双击放大、支持滑动<br/>
 ![](https://github.com/xuzhitaosanta/Android_RedHare/blob/master/pic/picture.gif)<br/><br/>
 
 ###发表动态
