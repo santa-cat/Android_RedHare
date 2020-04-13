@@ -1,4 +1,4 @@
-# Android_RedHare
+# Android_RedHare - 刚接触Android写的demo
 模仿领英赤兔客户端：总共有16个主界面，包括聊天模块（照片、语音、表情等）、照片管理器、下拉刷新框架、通讯录快速导航栏等。<br/><br/>
 
 ###底部菜单栏
